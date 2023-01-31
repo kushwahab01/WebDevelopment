@@ -1,0 +1,76 @@
+.banner {
+    background-image: url('banner.jpg');
+    height: 300px;
+    width =100%;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 60%;
+}
+.row {
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.new-arrival{
+    position:relative;
+    margin-bottom:10px;
+}
+.card{
+    margin-bottom:20px;
+    border:2px solid;
+}
+.col-md-3 col-sm-6 col-xs-12{
+    margin-bottom:20px;
+}
+.footer {
+    background: #a3a3a0;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    top: px;
+    margin-bottom: 0;
+}
+.column-about1{
+    position:relative;
+    margin-left:20px;
+}
+.column-link {
+    background-position-x: right;
+    margin-right: 50px;
+}
+.main1 {
+    margin-top: 50px;
+}
+.footer1 {
+    background: #a3a3a0;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    top: 100px;
+    margin-bottom: 0;
+}
+.left-panel {
+    position: relative;
+    top: 10px;
+}
+
+    .left-panel ul li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+.right-panel{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.main{
+    position:relative;
+    margin-top:200px;
+}
+
+@media only screen and (min-device-width:700px) and (max-device-width:1000px) {
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+}
