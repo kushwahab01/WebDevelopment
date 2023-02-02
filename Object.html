@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var Employee = {
+            eid: 1,
+            ename: "sanjeev",
+            salary: 25000,
+            print: function () {
+                return this.eid + " " + this.ename + " " + this.salary
+            },
+            bonus: function () {
+                var b = this.salary * 0.10;
+                this.salary = this.salary + b;
+                return this.salary;
+            }
+        };
+        console.log(Employee.print());
+        console.log(Employee.bonus());
+
+        var Book = {
+            bid: 10,
+            bname: "sky",
+            bauther: "Harry",
+            price: 400,
+            print: function () {
+                return this.bid + " " + this.bname + " " + this.bauther + " " + this.price
+            },
+            Disc: function () {
+                var a = this.price * 0.10;
+                this.price = this.price + a;
+                return this.price;
+            }
+
+        };
+        console.log(Book.print());
+        console.log(Book.Disc());
+
+        var Product = {
+            pid: 111,
+            pname: "Mouse",
+            pprice: 4500,
+            print: function () {
+                return this.pid + " " + this.pname + " " + this.pprice
+            },
+            Discount: function () {
+                var c = this.pprice * 0.15;
+                this.pprice = this.pprice + c;
+                return this.pprice;
+            }
+        };
+        console.log(Product.print());
+        console.log(Product.Discount());
+
+        var Student = {
+            sid: 1212,
+            sname: "brijesh",
+            perc: 40,
+            print: function () {
+                return this.sid + " " + this.sname + " " + this.perc
+            },
+            result: function () {
+                if (this.perc > 35) {
+                    console.log('pass');
+                }
+                else {
+                    console.log('failed');
+                }
+            }
+
+        };
+        console.log(Student.print());
+        console.log(Student.result());
+    </script>
+</body>
+</html>>

@@ -5,40 +5,63 @@
     <title></title>
 </head>
 <body style="background-color:aquamarine"><center>
-          <form>
-              <h1><b>Registration Form</b></h1></br>
-              <input type="text" name="text" placeholder="Enter full name" required /><br>Enter Your Name</br></br>
-              <input type="password" name="password" placeholder="Enter password" required /><br>Enter the password</br></br>
-              <input type="email" name="email" required placeholder="Enter your mail" /></br>Enter your mail</br></br>
-              <input type="date" name="date" /><br>DOB</br></br>
-              <label>Select your gender</label></br>
-              <input type="radio" name="gender" />Male</br>
-              <input type="radio" name="gender" />Female</br></br>
-              <textarea rows="4"></textarea></br>
-              <label>
-                  Enter address
-              </label></br></br>
-               <input type="text" name="text"/></br>Enter Aadhar nummber</br></br>
-                <input type="file" name="file"/></br>Choose File</br></br>
-              <select>
-                  <option>Pune</option>
-                  <option>Mumbai</option>
-                  <option>Banglore</option>
-                  <option>Hydrabad</option>
-                  <option>Delhi</option>
+                                                 
+                                              <form action="Register.html">
+                                                  <h1><b>Registration Form</b></h1></br>
+                                                    
+                                                  <input type="text" name="text" placeholder="Enter full name" required /><br>Enter Your Name</br></br>
+                                                  <input type="password" id="p1" name="password" placeholder="Enter password" required /><br>Enter the password</br></br>
+                                                  <input type="password" id="p2" name="password" placeholder="Confirmed password" required /><br>Confirmed password<span id="error1"></span></br></br>
+                                                  <input type="email" name="email" required placeholder="Enter your mail" /></br>Enter your mail</br></br>
+                                                  <input type="date" name="date" /><br>DOB</br></br>
+                                                  <label>Select your gender</label></br>
+                                                  <input type="radio" id="m" name="gender" />Male</br>
+                                                  <input type="radio"id="f" name="gender" />Female</br></br>
+                                                    <span id="error"></span>
+                                                  <textarea rows="4"></textarea></br>
+                                                  <label>
+                                                      Enter address
+                                                  </label></br></br>
+                                                  <input type="text" name="text" /></br>Enter Aadhar nummber</br></br>
+                                                  <input type="file" name="file" /></br>Choose File</br></br>
+                                                  <select>
+                                                      <option>Pune</option>
+                                                      <option>Mumbai</option>
+                                                      <option>Banglore</option>
+                                                      <option>Hydrabad</option>
+                                                      <option>Delhi</option>
 
-              </select></br>
-              <label>Select your city</label></br></br>
-              <select>
-                  <option>Maharastra</option>
-                  <option>Karnatka</option>
-                  <option>Madhya pradesh</option>
-                  <option>Utter pradesh</option>
-                  <option>rajasthan</option>
+                                                  </select></br>
+                                                  <label>Select your city</label></br></br>
+                                                  <select>
+                                                      <option>Maharastra</option>
+                                                      <option>Karnatka</option>
+                                                      <option>Madhya pradesh</option>
+                                                      <option>Utter pradesh</option>
+                                                      <option>rajasthan</option>
 
-              </select></br>
-              <label>Select your state</label></br></br>
-              <input type="submit" name="button"/></br>
-          </form></center>
+                                                  </select></br>
+                                                  <label>Select your state</label></br></br>
+                                                  <input type="submit" value="check" onclick="return check()" /></br>
+                                              </form></center>
+                                            <script>
+                                                
+                                                function Match() {
+                                                    var value1 = document.getElementById("p1").value;
+                                                    var value2 = document.getElementById("p2").value;
+                                                    var value3 = document.getElementById("m").checked;
+                                                    var value4 = document.getElementById("f").checked;
+                                                    if (!value1.Match(value2) {
+                                                        document.getElementById("error1").innerHTML = "Password does not match";
+                                                        return false;
+                                                    }
+                                                    if (value1.Match(value2)) {
+                                                        document.getElementById("error1").innerHTML = "";
+                                                    }
+                                                    if (value3 == false && value4 == false) {
+                                                        document.getElementById("error").innerHTML = "please select gender";
+                                                        return false;
+                                                    }
+                                            </script>
 </body>
 </html>

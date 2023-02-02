@@ -38,6 +38,7 @@
 .column-link {
     background-position-x: right;
     margin-right: 50px;
+    list-style-type:none;
 }
 .main1 {
     margin-top: 50px;
